@@ -14,6 +14,7 @@ object Day05 {
   def part1(xs: Vector[Int]): Int =
     part1Recur(0, xs, 0)
 
+  @tailrec
   def part2Recur(i: Int, xs: Vector[Int], steps: Int): Int =
     if (i >= xs.size || i < 0)
       steps
